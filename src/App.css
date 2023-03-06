@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
+}
+
+header{
+  flex: 1 1 50px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  column-gap: 10px;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+ul{
+  list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li a{
+  color: black;
+  text-decoration: none;
 }
+
+header ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+header li a{
+  font-weight: bold;
+
+}
+
+main{
+  flex: 2 0;
+}
+
+.hero{
+  background-color: #495E57;
+  display: flex;
+  justify-content: center;
+  column-gap: 200px;
+  padding: 20px;
+}
+
+.hero img{
+  width: 200px;
+  border-radius: 20px;
+}
+
+.hero div{
+  flex-basis: 300px;
+}
+
+.hero button{
+  margin-top: 40px;
+
+}
+
+.hero h1{
+  color: #F4CE14;
+}
+
+.hero h2{
+  color: #fff;
+}
+
+.hero button{
+  padding: 10px;
+  background-color: #F4CE14;
+  border: none;
+  border-radius: 10px;
+  width: 60%;
+  font-weight: bold;
+}
+
+.highlights{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 100px;
+  padding: 20px;
+}
+
+.card{
+  width: 200px;
+  background-color: rgb(221, 214, 214);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-section{
+  padding: 10px;
+}
+
+.card button{
+  padding: 5px;
+  border: none;
+  background-color: #F4CE14;
+}
+
+.card img{
+  width: 200px;
+
+}
+
+.testimonials{
+  background-color: #495E57;
+  height: 400px;
+  text-align: center;
+  color: #fff;
+}
+
+.about{
+  text-align: center;
+  padding: 20px;
+}
+
+footer{
+  flex: 1 0 100px;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+}
+
+footer a{
+  color: #fff;
+}
+
